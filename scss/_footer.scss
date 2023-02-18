@@ -1,0 +1,106 @@
+#footer {
+  background-color: $purple;
+  color: $white;
+  padding: 40px;
+
+  .footer-container {
+    max-width: 1340px;
+    margin: auto;
+  }
+
+  ul {
+    margin-bottom: 60px;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 36px;
+
+    li {
+      a {
+        color: $white;
+      }
+    }
+  }
+
+  .logo-link {
+    .logo {
+      font-size: 36px;
+      font-weight: 800;
+      line-height: 53px;
+    }
+
+    ul {
+      display: inline-flex;
+
+      img {
+        width: 24px;
+        margin-right: 10px;
+      }
+    }
+  }
+
+  #form {
+    margin-bottom: 100px;
+
+    label {
+      font-size: 10px;
+      font-weight: 500;
+      line-height: 15px;
+      color: $form-label;
+    }
+
+    .form-grp {
+      width: 90%;
+      position: relative;
+
+      @include desktop {
+        width: 20rem;
+        margin-left: 0;
+      }
+
+      #email {
+        padding: 15px 20px;
+        display: block;
+        width: 100%;
+        background-color: $form-input-bg;
+        border: none;
+        border-radius: 12px;
+        outline: none;
+      }
+
+      #btn {
+        position: absolute;
+        right: 4px;
+        top: 4px;
+        height: 80%;
+        padding: 8px 20px;
+        border: none;
+        background-color: $btn-bg;
+        color: $form-input-bg;
+        font-weight: 500;
+        font-size: 14px;
+        line-height: 21px;
+        border-radius: 12px;
+        cursor: pointer;
+      }
+    }
+  }
+
+  p {
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 14px;
+    text-align: center;
+
+    a {
+      color: $white;
+      text-decoration: underline;
+    }
+  }
+
+  @include desktop {
+    .d-flex {
+      display: flex;
+      justify-content: space-between;
+    }
+  }
+}

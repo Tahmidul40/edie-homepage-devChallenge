@@ -1,0 +1,78 @@
+#services {
+  h2 {
+    font-size: 24px;
+    font-weight: 500;
+    line-height: 36px;
+    width: 80%;
+
+    @include desktop {
+      font-size: 48px;
+      line-height: 72px;
+      width: 40rem;
+    }
+  }
+
+  .services-grp {
+    @include tablet {
+      display: flex;
+      justify-content: center;
+    }
+
+    .card {
+      border-radius: 12px;
+      padding: 40px;
+      margin-bottom: 30px;
+      width: 340px !important;
+
+      &:hover {
+        box-shadow: 0px 21px 72px -20px rgba(0, 0, 0, 0.25);
+      }
+    }
+
+    .icon-custom {
+      color: $white;
+      border-radius: 16px;
+      padding: 18px;
+      font-variation-settings: "FILL" 1;
+    }
+
+    .ui-ux {
+      background-color: $sky-blue;
+    }
+
+    .front-end {
+      background-color: $green;
+    }
+
+    .back-end {
+      background-color: $bright-red;
+    }
+
+    h3 {
+      font-size: 24px;
+      font-weight: 700;
+      line-height: 36px;
+      margin: 30px 0;
+    }
+
+    p {
+      color: $para;
+      font-size: 16px;
+      font-weight: 400;
+      line-height: 24px;
+      margin-bottom: 30px;
+    }
+
+    .btn {
+      padding: 8px 20px;
+      border: none;
+      background-color: $btn-bg;
+      color: $white;
+      font-weight: 500;
+      font-size: 14px;
+      line-height: 21px;
+      border-radius: 12px;
+      cursor: pointer;
+    }
+  }
+}
